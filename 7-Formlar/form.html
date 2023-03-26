@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <p>
+            "name" değeri, formun ismini belirler.
+            <br>
+            "action" değeri, form bilgilerinin nereye gönderileceğini belirtir.
+            <br>
+            "method" değeri, form bilgilerinin nasıl gönderileceğini belirtir.
+        </p>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad: <input type="text" name="ad-soyad">
+            <br>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <p>
+            "maxlength" değeri, text kutusunun alabileceği maksimum karakter sayısını temsil eder.
+            <br>
+            "size" değeri, text kutusunda görünecek mevcut karakter sayısını temsil eder.
+            <br>
+            "required" değeri, bu text kutusunun doldurulmasının gerekli olduğunu belirtir.
+        </p>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad: <input type="text" name="ad-soyad" id="id-ad-soyad" size="20" maxlength="30" required>
+            <br>
+            <input type="submit">
+        </form>
+
+        <hr>
+        
+        <p>
+            "input" etiketinin "type" değerini "reset" olursa ve bu butona basarsak, formdaki değerler silinir.
+        </p>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad: <input type="text" name="ad-soyad">
+            <br>
+            <input type="submit" value="Tamam"><input type="reset" value="Temizle">
+        </form>
+
+        <hr>
+
+        <p>
+            "input" etiketinin "type" değerini "email" yaparsak bizden bir e-posta adresi girmemizi bekler.
+            <br>
+            "input" etiketinin "type" değerini "url" yaparsak bizden bir link girmemizi bekler.
+            <br>
+            "input" etiketinin "type" değerini "number" yaparsak bizden bir sayı girmemizi bekler.
+            <br>
+            <br>
+            Gördüğünüz üzere aşağıdaki form çok düzensiz. Bir sonraki aşamada "table" etiketi ile formlar nasıl düzenli gözükür, bu konuya odaklanacağız.
+        </p>
+        <form name="kayit" action="kayit.php" method="get">
+            Ad Soyad:<input type="text" name="ad-soyad">
+            <br>
+            Email:<input type="email" name="email" id="email" required>
+            <br>
+            Web Sitesi: <input type="url" name="adres" id="adres">
+            <br>
+            Yaşınız:<input type="number">
+            <br>
+            <input type="submit" value="Tamam"><input type="reset" name="Temizle" id="">
+        </form>
+
+        <hr>
+
+        <h1>Üye Kayıt Formu:</h1>
+        <form name="kayit" action="kayit.aspx" method="get">
+            <table border="3">
+                <tr><td>Ad Soyad:</td><td><input name="ad-soyad" type="text"></td></tr>
+                <tr><td>E-mail:</td><td><input type="email" name="email"></td></tr>
+                <tr><td>Web Sitesi:</td><td><input type="url" name="adres"></td></tr>
+                <tr><td>Yaşınız:</td><td><input type="number" name="yas"></td></tr>
+                <tr><td></td><td><input type="submit" name="submit"><input type="reset" name="reset"></td></tr>
+                <tr></tr>
+            </table>
+        </form>
+    </body>
+</html>

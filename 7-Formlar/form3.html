@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Onay Kutusu</h1>
+        <form name="onay">
+            <input type="checkbox" name="bulten"> Bültene abone ol
+            <br>
+            <input type="checkbox" name="medeni"> Evliyim
+            <br>
+            <br>
+            <input type="submit" value="Onay">
+        </form>
+
+        <hr>
+
+        <h1>Seçenek Kutusu</h1>
+        <p>
+            "input" etiketinin "type" değerini "radio" yaptığımızda, bu radio butonlarını aynı gruba almak için bu "input" etiketlerinin "name" değerleri aynı olmalı.
+        </p>
+        <form name="secenek">
+            <h4>Sevdiğini spor:</h4>
+            <input type="radio" name="spor" value="futbol">Futbol
+            <input type="radio" name="spor" value="basketbol">Basketbol
+            <input type="radio" name="spor" value="voleybol">Voleybol
+            <br>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <h1>Seçenek Listesi</h1>
+        <form name="combobox">
+            <h4>İl seçiniz:</h4>
+            <select name="dogum-yeri">
+                <option>Adana</option>
+                <option>Antalya</option>
+                <option>Ankara</option>
+                <option>İstanbul</option>
+                <option selected>İzmir</option>
+            </select>
+            <br>
+            <input type="submit"><input type="reset">
+        </form>
+    </body>
+</html>
