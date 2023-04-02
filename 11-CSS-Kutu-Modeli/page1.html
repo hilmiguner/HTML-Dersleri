@@ -3,11 +3,31 @@
     <head>
         <style>
             h1{
-                border-style: solid;
+                border-style: solid dashed dotted double;
+                border-width: 10px 20px 30px 40px;
+                border-color: red blue yellow green;
                 width: 200px;
                 height: 80px;
                 padding: 30px 50px;
                 margin: 30px;
+            }
+            h2{
+                border-style: dashed;
+                width: 120px;
+            }
+            p{
+                border-style: solid;
+                border-width: 2px;
+                border-color: green;
+                background-color: gray;
+                width: 200px;
+                height: 100px;
+            }
+            #excel{
+                background-image: url("assets/animal.jpg");
+                background-size: 200px;
+                font-weight: bold;
+                color: white;
             }
         </style>
     </head>
@@ -16,13 +36,13 @@
             <center>
                 <a href="index.html">Anasayfa</a>
                 |
-                <a href="page1.html">Kutu Boyutu ve Aralığı</a>
+                <a href="page1.html">Örnek Sayfa 1</a>
             </center>
         </nav>
         <h1>Eğitimlerimiz:</h1>
         <h2>Temel Bilişim</h2>
         <p>Windows</p>
         <p>Word</p>
-        <p>Excel</p>
+        <p id="excel">Excel</p>
     </body>
 </html>
