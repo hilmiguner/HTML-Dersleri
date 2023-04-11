@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container
+            {
+                display: flex;
+                justify-content: center;
+                width: fit-content;
+                margin: auto;
+            }
+            #container div
+            {
+                margin-inline: 10px;
+                position: relative;
+                text-align: center;
+            }
+            .big
+            {
+                width: 300px;
+                height: 200px;
+                background-color: khaki;
+                border: solid 3px red;
+            }
+            .small
+            {
+                width: 150px;
+                height: 100px;
+                background-color: palevioletred;
+                border: solid 3px blue;
+
+                position: relative;
+                left: 75px;
+                top: -50px;
+            }
+            #ust
+            {
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <nav style="margin: 20px 0px 20px 0px;">
+            <center>
+                <a href="index.html">Anasayfa</a>
+                |
+                <a href="page1.html">Örnek Sayfa 1</a>
+                |
+                <a href="page2.html">Sayfa Düzeni</a>
+                |
+                <a href="page3.html">Kutu Konumu</a>
+                |
+                <a href="page4.html">Katmanlar</a>
+            </center>
+        </nav>
+        <hr>
+        <center>
+            <h1>KATMANLAR</h1>
+        </center>
+        <div id="container">
+            <div>
+                <h3>
+                    Standart Z-Indeks
+                </h3>
+                <div class="big"></div>
+                <div class="small"></div> 
+            </div>
+            <div>
+                <h3>
+                    Büyük Kutu Z-Indeks=1
+                </h3>
+                <div class="big" id="ust"></div>
+                <div class="small"></div> 
+             </div>
+        </div>
+        
+    </body>
+</html>
