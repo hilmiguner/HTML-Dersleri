@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1
+            {
+                width: 300px;
+                height: 100px;
+                border: solid;
+            }
+            #div2
+            {
+                width: 300px;
+                height: 100px;
+                border: solid;
+                overflow: hidden;
+            }
+            #div3
+            {
+                width: 300px;
+                height: 100px;
+                border: solid;
+                overflow: scroll;
+            }
+            p
+            {
+                position: relative;
+                top: -35px;
+                margin-bottom: 0px;
+                font-size: 50px;
+                border: solid;
+                background-color: cyan;
+                width: max-content;
+            }
+        </style>
+    </head>
+    <body>
+        <nav style="margin: 20px 0px 20px 0px;">
+            <center>
+                <a href="index.html">Anasayfa</a>
+                |
+                <a href="page1.html">Örnek Sayfa 1</a>
+                |
+                <a href="page2.html">Sayfa Düzeni</a>
+                |
+                <a href="page3.html">Kutu Konumu</a>
+                |
+                <a href="page4.html">Katmanlar</a>
+                |
+                <a href="page5.html">Overflow</a>
+            </center>
+        </nav>
+        <hr>
+        <center>
+            <h1>OVERFLOW</h1>
+        </center>
+
+        <h3>OVERFLOW: VISIBLE</h3>
+        <div id="div1">
+            <p>OVERFLOW -> VISIBLE (DEFAULT)</p>
+        </div>
+        <hr>
+        <h3>OVERFLOW: HIDDEN</h3>
+        <div id="div2">
+            <p>OVERFLOW -> HIDDEN</p>
+        </div>
+        <hr>
+        <h3>OVERFLOW: SCROLL</h3>
+        <div id="div3">
+            <p>OVERFLOW -> SCROLL</p>
+        </div>
+    </body>
+</html>
