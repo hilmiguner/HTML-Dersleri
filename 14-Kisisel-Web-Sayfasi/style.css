@@ -1,0 +1,181 @@
+/* CSS DOSYASI */
+
+/* Boşlukları sıfırla */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#rootPage {
+    width: 400px;
+    min-height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+}
+
+#banner {
+    width: 398px;
+    height: 100px;
+    margin: auto;
+    background-color: grey;
+}
+
+#logoDiv {
+    width: 120px;
+    position: relative;
+    top: 6px;
+    left: 9px;
+    float: left;
+}
+
+#logoDiv img {
+    width: 120px;
+    padding-top: 6px;
+}
+
+#socialDiv {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    right: 9px;
+    float: right;
+    text-align: center;
+}
+
+.smIcon {
+    width: 35px;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: 2.5px;
+}
+
+#mainNav {
+    width: 398px;
+    height: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    margin: auto;
+    background-color: deepskyblue;    
+}
+
+#mainNav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#mainNav li {
+    margin-inline: auto;
+    text-align: center;
+    background-color: white;
+    margin-top: 8px;
+    padding-block: 5px;
+    width: 90px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 15px;
+}
+
+#mainNav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+#mainNav a:link {
+    color: blue;
+}
+
+#mainNav a:visited {
+    color: blue;
+}
+
+#mainNav a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+#mainNav a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+#mainContent {
+    border: solid 1px;
+    width: 300px;
+    min-height: 400px;
+    margin: auto;
+    background-color: white;
+    float: left;
+}
+
+#imgDog {
+    width: 120px;
+    margin: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#mainContent p {
+    padding: 5px;
+}
+
+#sideMenu {
+    border: solid 1px;
+    width: 96px;
+    min-height: 400px;
+    margin: auto;
+    background-color: red;
+    float: left;
+}
+
+#sideMenu h1 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 35px;
+    text-decoration: underline;
+}
+
+#sideMenu p {
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+#bottomMenu {
+    border: solid 1px;
+    width: 398px;
+    min-height: 50px;
+    background-color: aqua;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+#bottomMenu a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+#bottomMenu a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#bottomMenu a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#bottomMenu a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+#bottomMenu p {
+    font-size: 10px;
+    position: relative;
+    bottom: -15px;
+}
